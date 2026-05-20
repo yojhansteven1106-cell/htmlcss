@@ -1,8 +1,3 @@
-/* http://meyerweb.com 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,7 +50,7 @@ div.contenedor {
     height: 100%;
     overflow: hidden;
 
-    background: rgba(204, 204, 204, .4);
+    background: rgba(255, 255, 255, .6); /* Un poco más claro para resaltar los cuadros */
     border-radius: 5px 5px 10px 10px;
     -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
     -moz-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
@@ -65,39 +60,39 @@ div.contenedor {
 header,nav,section,article,footer{
     border-radius: 10px;
     padding: 15px;
-    border: solid 2px black;
+    border: solid 2px #0044cc; /* Bordes cambiados a azul oscuro para combinar */
     margin-top: 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* --- CAMBIO: TODOS LOS CUADROS A AZUL CLARO --- */
 header{
     height: 75px;
     width: 100%;
-    float: center; /* Nota: float: center no existe, se mantiene de tu ejemplo original */
-    background-color:#ffaaaa;
+    float: center;
+    background-color: #bcd4e6; /* Azul claro pastel */
     overflow: hidden;
 }
 nav{
     width: 36%;
     float: left;
-    background-color: #fff0aa;
+    background-color: #a2c4c9; /* Azul claro grisáceo */
     margin-left: 0%;
-
 }
-
 section{
     width: 62%;
     float: right;
-    background-color: #d8b0ff;
+    background-color: #b0e0e6; /* Azul claro polvo */
     overflow: hidden;
 }
 footer{
-    clear: both; /* Evita que el footer se suba por culpa de los floats */
+    clear: both; /* Evita desajustes con los elementos flotantes */
     height: 95px;
     width: 100%;
     float:left;
-    background-color: #b0e8ac;
+    background-color: #add8e6; /* Azul claro tradicional */
     overflow: hidden;
 }
 header,footer,article{
@@ -105,8 +100,8 @@ header,footer,article{
 }
 article{
     width: 90%;
-    float: center; /* Nota: float: center no existe, se mantiene de tu ejemplo original */
-    background-color: #aaf0ff;
+    float: center;
+    background-color: #e0f7fa; /* Azul celeste muy claro */
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -116,8 +111,7 @@ body {
     line-height: 1;
     font:16px/28px Georgia,'Times New Roman', Times, serif;
 
-    /* CAMBIO: Fondo cambiado a una paleta de azul tipo corporativo */
-    background-color: #1e3c72; 
+    background-color: #1e3c72; /* Fondo de pantalla azul */
     
     background-image: -webkit-gradient(linear, 0 100%, 100% 0,
                         color-stop(.25, rgba(255, 255, 255, .1)), color-stop(.25, transparent),
@@ -146,6 +140,7 @@ body {
 
 h1,h2{
     font-family:"droid serif", sans-serif;
+    color: #002266; /* Texto de títulos en azul oscuro para leerse bien */
 }
 h1{
     font-size: 32px;
@@ -186,7 +181,7 @@ p img{
     margin-left: 20%;
 }
 
-/* CAMBIO: Botones con fondo blanco y texto/sombras azules */
+/* BOTONES BLANCOS CON DETALLES AZULES */
 li a{
     display: inline-block;    
     font-size: 1.1em;
@@ -196,19 +191,18 @@ li a{
     width: 60%;
     text-decoration: none;
 
-    color: #1e3c72; /* Texto azul */
-    background: #ffffff; /* Botón blanco */
+    color: #1e3c72; 
+    background: #ffffff; 
 
     -moz-border-radius:20px 0 20px 0;
     -webkit-border-radius: 20px 0 20px 0;
 
     text-shadow: 1px 1px 1px #fff;
-    -moz-box-shadow: 0px 6px 0 #112244; /* Sombra inferior azul oscuro */
+    -moz-box-shadow: 0px 6px 0 #112244; 
     -webkit-box-shadow: 0px 6px 0 #112244;
     box-shadow: 0px 6px 0 #112244;
 }
 
-/* CAMBIO: Al pasar el mouse, invierte los colores (Fondo azul, texto blanco) */
 li a:hover{
     -moz-border-radius: 0 10px 0 10px;
     -webkit-border-radius: 0 10px 0 10px;
@@ -220,8 +214,6 @@ li a:hover{
     -webkit-box-shadow: 0px 6px 0 #0b1528;
     box-shadow: 0px 6px 0 #0b1528;
 }
-
-/* CAMBIO: Al pulsar el botón cambia a un azul más oscuro */
 li a:active{
     position:relative;
     top:3px;
@@ -232,7 +224,6 @@ li a:active{
     background: #1a3360;
     color: #ffffff;
 }
-
 header img{
     float: right;
     height: 100%;
